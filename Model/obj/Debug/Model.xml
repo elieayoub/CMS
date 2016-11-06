@@ -1,0 +1,906 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Model
+</name>
+</assembly>
+<members>
+<member name="M:Model.ABC_CMSApplicationEntities.#ctor">
+	<summary>
+ Initializes a new ABC_CMSApplicationEntities object using the connection string found in the 'ABC_CMSApplicationEntities' section of the application configuration file.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.#ctor(System.String)">
+	<summary>
+ Initialize a new ABC_CMSApplicationEntities object.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+ Initialize a new ABC_CMSApplicationEntities object.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.Entities">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.ErrorLogs">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.Menus">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.Pages">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.PagesPermissions">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.PermissionControlsTypes">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.PermissionsActions">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.PermissionsControls">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.PermissionsTypes">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.Roles">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.RolesPermissions">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.Users">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.UsersActions">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.UsersRoles">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.v_GetErrorLogsInformation">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.v_GetMenuByUser">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.v_GetUsersInformations">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.ActionLogs">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ABC_CMSApplicationEntities.v_GetActionLogsInformation">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToEntities(Model.Entity)">
+	<summary>
+ Deprecated Method for adding a new object to the Entities EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToErrorLogs(Model.ErrorLog)">
+	<summary>
+ Deprecated Method for adding a new object to the ErrorLogs EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToMenus(Model.Menu)">
+	<summary>
+ Deprecated Method for adding a new object to the Menus EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToPages(Model.Page)">
+	<summary>
+ Deprecated Method for adding a new object to the Pages EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToPagesPermissions(Model.PagesPermission)">
+	<summary>
+ Deprecated Method for adding a new object to the PagesPermissions EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToPermissionControlsTypes(Model.PermissionControlsType)">
+	<summary>
+ Deprecated Method for adding a new object to the PermissionControlsTypes EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToPermissionsActions(Model.PermissionsAction)">
+	<summary>
+ Deprecated Method for adding a new object to the PermissionsActions EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToPermissionsControls(Model.PermissionsControl)">
+	<summary>
+ Deprecated Method for adding a new object to the PermissionsControls EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToPermissionsTypes(Model.PermissionsType)">
+	<summary>
+ Deprecated Method for adding a new object to the PermissionsTypes EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToRoles(Model.Role)">
+	<summary>
+ Deprecated Method for adding a new object to the Roles EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToRolesPermissions(Model.RolesPermission)">
+	<summary>
+ Deprecated Method for adding a new object to the RolesPermissions EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToUsers(Model.User)">
+	<summary>
+ Deprecated Method for adding a new object to the Users EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToUsersActions(Model.UsersAction)">
+	<summary>
+ Deprecated Method for adding a new object to the UsersActions EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToUsersRoles(Model.UsersRole)">
+	<summary>
+ Deprecated Method for adding a new object to the UsersRoles EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddTov_GetErrorLogsInformation(Model.v_GetErrorLogsInformation)">
+	<summary>
+ Deprecated Method for adding a new object to the v_GetErrorLogsInformation EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddTov_GetMenuByUser(Model.v_GetMenuByUser)">
+	<summary>
+ Deprecated Method for adding a new object to the v_GetMenuByUser EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddTov_GetUsersInformations(Model.v_GetUsersInformations)">
+	<summary>
+ Deprecated Method for adding a new object to the v_GetUsersInformations EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddToActionLogs(Model.ActionLog)">
+	<summary>
+ Deprecated Method for adding a new object to the ActionLogs EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:Model.ABC_CMSApplicationEntities.AddTov_GetActionLogsInformation(Model.v_GetActionLogsInformation)">
+	<summary>
+ Deprecated Method for adding a new object to the v_GetActionLogsInformation EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="T:Model.ABC_CMSApplicationEntities">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.ActionLog.CreateActionLog(System.Int64)">
+	<summary>
+ Create a new ActionLog object.
+ </summary>
+	<param name="actionLogId">Initial value of the ActionLogId property.</param>
+</member><member name="P:Model.ActionLog.ActionLogId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ActionLog.UserId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ActionLog.PagePermissionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ActionLog.ActionLogControlId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ActionLog.ActionLogDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ActionLog.ActionLogDateMMS">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ActionLog.UserActionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ActionLog.Description">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.ActionLog">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.Entity.CreateEntity(System.Int64)">
+	<summary>
+ Create a new Entity object.
+ </summary>
+	<param name="entityId">Initial value of the EntityId property.</param>
+</member><member name="P:Model.Entity.EntityId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Entity.FirstName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Entity.LastName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Entity.CreationDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Entity.CreationDateMMS">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Entity.ModificationDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Entity.ModificationDateMMS">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Entity.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.Entity">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.ErrorLog.CreateErrorLog(System.Int64)">
+	<summary>
+ Create a new ErrorLog object.
+ </summary>
+	<param name="errorLogId">Initial value of the ErrorLogId property.</param>
+</member><member name="P:Model.ErrorLog.ErrorLogId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ErrorLog.UserId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ErrorLog.ErrorLogDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ErrorLog.ErrorLogDateMMS">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ErrorLog.Message">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ErrorLog.StackTrace">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ErrorLog.InnerException">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ErrorLog.Source">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ErrorLog.ErrorLogControlId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.ErrorLog.UserActionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.ErrorLog">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.Menu.CreateMenu(System.Int64)">
+	<summary>
+ Create a new Menu object.
+ </summary>
+	<param name="menuId">Initial value of the MenuId property.</param>
+</member><member name="P:Model.Menu.MenuId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Menu.MenuPermissionTypeId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Menu.MenuOrder">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Menu.MenuParentId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Menu.MenuName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Menu.MenuDescription">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Menu.MenuPath">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Menu.MenuPageId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Menu.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.Menu">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.Page.CreatePage(System.Int64)">
+	<summary>
+ Create a new Page object.
+ </summary>
+	<param name="pageId">Initial value of the PageId property.</param>
+</member><member name="P:Model.Page.PageId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Page.PageName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Page.PageDescription">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Page.PagePermissionTypeId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Page.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.Page">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.PagesPermission.CreatePagesPermission(System.Int64)">
+	<summary>
+ Create a new PagesPermission object.
+ </summary>
+	<param name="pagePermissionId">Initial value of the PagePermissionId property.</param>
+</member><member name="P:Model.PagesPermission.PagePermissionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PagesPermission.PagePermissionName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PagesPermission.PagePermissionDescription">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PagesPermission.PagePermissionPageId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PagesPermission.PagePermissionTypeId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PagesPermission.IsEnabled">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PagesPermission.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.PagesPermission">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.PermissionControlsType.CreatePermissionControlsType(System.Int64)">
+	<summary>
+ Create a new PermissionControlsType object.
+ </summary>
+	<param name="permissionControlsTypeId">Initial value of the PermissionControlsTypeId property.</param>
+</member><member name="P:Model.PermissionControlsType.PermissionControlsTypeId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionControlsType.PermissionControlTypeName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionControlsType.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.PermissionControlsType">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.PermissionsAction.CreatePermissionsAction(System.Int64)">
+	<summary>
+ Create a new PermissionsAction object.
+ </summary>
+	<param name="permissionActionId">Initial value of the PermissionActionId property.</param>
+</member><member name="P:Model.PermissionsAction.PermissionActionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsAction.PermissionActionPagePermissionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsAction.PermissionActionPermissionControlId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsAction.PermissionActionRoleId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsAction.Create">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsAction.Read">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsAction.Update">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsAction.Delete">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.PermissionsAction">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.PermissionsControl.CreatePermissionsControl(System.Int64)">
+	<summary>
+ Create a new PermissionsControl object.
+ </summary>
+	<param name="permissionControlId">Initial value of the PermissionControlId property.</param>
+</member><member name="P:Model.PermissionsControl.PermissionControlId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsControl.PermissionControlName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsControl.PermissionControlTypeId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsControl.PermissionControlPageId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsControl.PermissionControlPagePermissionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsControl.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.PermissionsControl">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.PermissionsType.CreatePermissionsType(System.Int64)">
+	<summary>
+ Create a new PermissionsType object.
+ </summary>
+	<param name="permissionTypeId">Initial value of the PermissionTypeId property.</param>
+</member><member name="P:Model.PermissionsType.PermissionTypeId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.PermissionsType.PermissionTypeName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.PermissionsType">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.Role.CreateRole(System.Int64)">
+	<summary>
+ Create a new Role object.
+ </summary>
+	<param name="roleId">Initial value of the RoleId property.</param>
+</member><member name="P:Model.Role.RoleId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Role.RoleName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Role.RoleDescription">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.Role.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.Role">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.RolesPermission.CreateRolesPermission(System.Int64)">
+	<summary>
+ Create a new RolesPermission object.
+ </summary>
+	<param name="rolePermissionId">Initial value of the RolePermissionId property.</param>
+</member><member name="P:Model.RolesPermission.RolePermissionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.RolesPermission.RoleId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.RolesPermission.PagePermissionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.RolesPermission">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.User.CreateUser(System.Int64)">
+	<summary>
+ Create a new User object.
+ </summary>
+	<param name="userId">Initial value of the UserId property.</param>
+</member><member name="P:Model.User.UserId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.User.Username">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.User.Password">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.User.Email">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.User.EntityId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.User.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.User.ModificationDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.User.ModificationDateMMS">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.User">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.UsersAction.CreateUsersAction(System.Int64,System.String)">
+	<summary>
+ Create a new UsersAction object.
+ </summary>
+	<param name="userActionId">Initial value of the UserActionId property.</param>
+	<param name="userActionName">Initial value of the UserActionName property.</param>
+</member><member name="P:Model.UsersAction.UserActionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.UsersAction.UserActionName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.UsersAction">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.UsersRole.CreateUsersRole(System.Int64)">
+	<summary>
+ Create a new UsersRole object.
+ </summary>
+	<param name="userRoleId">Initial value of the UserRoleId property.</param>
+</member><member name="P:Model.UsersRole.UserRoleId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.UsersRole.RoleId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.UsersRole.UserId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.UsersRole">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.v_GetActionLogsInformation.Createv_GetActionLogsInformation(System.Int64,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Create a new v_GetActionLogsInformation object.
+ </summary>
+	<param name="actionLogId">Initial value of the ActionLogId property.</param>
+	<param name="username">Initial value of the Username property.</param>
+	<param name="pagePermissionName">Initial value of the PagePermissionName property.</param>
+	<param name="permissionControlName">Initial value of the PermissionControlName property.</param>
+	<param name="userActionName">Initial value of the UserActionName property.</param>
+	<param name="pageName">Initial value of the PageName property.</param>
+	<param name="description">Initial value of the Description property.</param>
+</member><member name="P:Model.v_GetActionLogsInformation.ActionLogId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.UserId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.PagePermissionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.ActionLogControlId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.ActionLogDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.ActionLogDateMMS">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.UserActionId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.Username">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.PagePermissionName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.PermissionControlName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.UserActionName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.PageName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.Description">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetActionLogsInformation.PageId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.v_GetActionLogsInformation">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.v_GetErrorLogsInformation.Createv_GetErrorLogsInformation(System.Int64,System.String,System.String,System.String)">
+	<summary>
+ Create a new v_GetErrorLogsInformation object.
+ </summary>
+	<param name="errorLogId">Initial value of the ErrorLogId property.</param>
+	<param name="username">Initial value of the Username property.</param>
+	<param name="permissionControlName">Initial value of the PermissionControlName property.</param>
+	<param name="userActionName">Initial value of the UserActionName property.</param>
+</member><member name="P:Model.v_GetErrorLogsInformation.ErrorLogId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.ErrorLogDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.ErrorLogDateMMS">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.Message">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.StackTrace">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.InnerException">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.Source">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.Username">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.PermissionControlName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.UserActionName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetErrorLogsInformation.UserId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.v_GetErrorLogsInformation">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.v_GetMenuByUser.Createv_GetMenuByUser(System.Int64)">
+	<summary>
+ Create a new v_GetMenuByUser object.
+ </summary>
+	<param name="menuId">Initial value of the MenuId property.</param>
+</member><member name="P:Model.v_GetMenuByUser.MenuId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetMenuByUser.MenuPermissionTypeId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetMenuByUser.MenuOrder">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetMenuByUser.MenuParentId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetMenuByUser.MenuName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetMenuByUser.MenuDescription">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetMenuByUser.MenuPath">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetMenuByUser.MenuPageId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetMenuByUser.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetMenuByUser.UserId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.v_GetMenuByUser">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:Model.v_GetUsersInformations.Createv_GetUsersInformations(System.Int64,System.Int64)">
+	<summary>
+ Create a new v_GetUsersInformations object.
+ </summary>
+	<param name="userId">Initial value of the UserId property.</param>
+	<param name="entityId">Initial value of the EntityId property.</param>
+</member><member name="P:Model.v_GetUsersInformations.Username">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.Password">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.Email">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.FirstName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.LastName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.IsActive">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.UserId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.EntityId">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.CreationDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.CreationDateMMS">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.ModificationDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.v_GetUsersInformations.ModificationDateMMS">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:Model.v_GetUsersInformations">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:Model.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Model.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Model.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

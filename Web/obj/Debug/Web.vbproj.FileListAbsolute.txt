@@ -1,0 +1,9 @@
+D:\Work\Projects\ABC CMS\Web\bin\Web.dll
+D:\Work\Projects\ABC CMS\Web\bin\Web.pdb
+D:\Work\Projects\ABC CMS\Web\bin\Web.xml
+D:\Work\Projects\ABC CMS\Web\obj\Debug\Web.Resources.resources
+D:\Work\Projects\ABC CMS\Web\obj\Debug\Web.vbproj.GenerateResource.Cache
+D:\Work\Projects\ABC CMS\Web\obj\Debug\Web.dll
+D:\Work\Projects\ABC CMS\Web\obj\Debug\Web.xml
+D:\Work\Projects\ABC CMS\Web\obj\Debug\Web.pdb
+D:\Work\Projects\ABC CMS\Web\obj\Debug\Web.vbprojResolveAssemblyReference.cache

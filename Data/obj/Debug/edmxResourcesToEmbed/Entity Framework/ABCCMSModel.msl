@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ABC_CMSApplicationModelStoreContainer" CdmEntityContainer="ABC_CMSApplicationEntities">
+    <EntitySetMapping Name="ActionLogs">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.ActionLog">
+        <MappingFragment StoreEntitySet="ActionLogs">
+          <ScalarProperty Name="ActionLogId" ColumnName="ActionLogId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="ActionLogDate" ColumnName="ActionLogDate" />
+          <ScalarProperty Name="ActionLogDateMMS" ColumnName="ActionLogDateMMS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Entities">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.Entity">
+        <MappingFragment StoreEntitySet="Entities">
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationDateMMS" ColumnName="CreationDateMMS" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationDateMMS" ColumnName="ModificationDateMMS" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ErrorLogs">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.ErrorLog">
+        <MappingFragment StoreEntitySet="ErrorLogs">
+          <ScalarProperty Name="ErrorLogId" ColumnName="ErrorLogId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ErrorLogDate" ColumnName="ErrorLogDate" />
+          <ScalarProperty Name="ErrorLogDateMMS" ColumnName="ErrorLogDateMMS" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="InnerException" ColumnName="InnerException" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="ErrorLogControlId" ColumnName="ErrorLogControlId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PermissionControlsTypes">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.PermissionControlsType">
+        <MappingFragment StoreEntitySet="PermissionControlsTypes">
+          <ScalarProperty Name="PermissionControlsTypeId" ColumnName="PermissionControlsTypeId" />
+          <ScalarProperty Name="PermissionControlTypeName" ColumnName="PermissionControlTypeName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permissions">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.Permission">
+        <MappingFragment StoreEntitySet="Permissions">
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+          <ScalarProperty Name="PermissionDescription" ColumnName="PermissionDescription" />
+          <ScalarProperty Name="PermissionPageId" ColumnName="PermissionPageId" />
+          <ScalarProperty Name="PermissionControlId" ColumnName="PermissionControlId" />
+          <ScalarProperty Name="PermissionTypeId" ColumnName="PermissionTypeId" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PermissionsActions">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.PermissionsAction">
+        <MappingFragment StoreEntitySet="PermissionsActions">
+          <ScalarProperty Name="PermissionActionId" ColumnName="PermissionActionId" />
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="Create" ColumnName="Create" />
+          <ScalarProperty Name="Read" ColumnName="Read" />
+          <ScalarProperty Name="Update" ColumnName="Update" />
+          <ScalarProperty Name="Delete" ColumnName="Delete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PermissionsControls">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.PermissionsControl">
+        <MappingFragment StoreEntitySet="PermissionsControls">
+          <ScalarProperty Name="PermissionControlId" ColumnName="PermissionControlId" />
+          <ScalarProperty Name="PermissionControlName" ColumnName="PermissionControlName" />
+          <ScalarProperty Name="PermissionControlTypeId" ColumnName="PermissionControlTypeId" />
+          <ScalarProperty Name="PermissionControlPageId" ColumnName="PermissionControlPageId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PermissionsTypes">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.PermissionsType">
+        <MappingFragment StoreEntitySet="PermissionsTypes">
+          <ScalarProperty Name="PermissionTypeId" ColumnName="PermissionTypeId" />
+          <ScalarProperty Name="PermissionTypeName" ColumnName="PermissionTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pages">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.Page">
+        <MappingFragment StoreEntitySet="Pages">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PagePermissionTypeId" ColumnName="PagePermissionTypeId" />
+          <ScalarProperty Name="PageDescription" ColumnName="PageDescription" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.Menu">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MenuPageId" ColumnName="MenuPageId" />
+          <ScalarProperty Name="MenuPath" ColumnName="MenuPath" />
+          <ScalarProperty Name="MenuDescription" ColumnName="MenuDescription" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="MenuParentId" ColumnName="MenuParentId" />
+          <ScalarProperty Name="MenuOrder" ColumnName="MenuOrder" />
+          <ScalarProperty Name="MenuPermissionTypeId" ColumnName="MenuPermissionTypeId" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolesPermissions">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.RolesPermission">
+        <MappingFragment StoreEntitySet="RolesPermissions">
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RolePermissionId" ColumnName="RolePermissionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersRoles">
+      <EntityTypeMapping TypeName="ABC_CMSApplicationModel.UsersRole">
+        <MappingFragment StoreEntitySet="UsersRoles">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

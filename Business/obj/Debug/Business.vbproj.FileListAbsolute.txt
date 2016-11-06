@@ -1,0 +1,17 @@
+D:\Work\Projects\ABC CMS\Business\bin\Debug\Business.dll
+D:\Work\Projects\ABC CMS\Business\bin\Debug\Business.pdb
+D:\Work\Projects\ABC CMS\Business\bin\Debug\Business.xml
+D:\Work\Projects\ABC CMS\Business\obj\Debug\Business.Resources.resources
+D:\Work\Projects\ABC CMS\Business\obj\Debug\Business.vbproj.GenerateResource.Cache
+D:\Work\Projects\ABC CMS\Business\obj\Debug\Business.dll
+D:\Work\Projects\ABC CMS\Business\obj\Debug\Business.xml
+D:\Work\Projects\ABC CMS\Business\obj\Debug\Business.pdb
+D:\Work\Projects\ABC CMS\Business\bin\Debug\Data.dll
+D:\Work\Projects\ABC CMS\Business\obj\Debug\Business.vbprojResolveAssemblyReference.cache
+D:\Work\Projects\ABC CMS\Business\bin\Debug\CommonLibrary.dll
+D:\Work\Projects\ABC CMS\Business\bin\Debug\Model.dll
+C:\Users\Elie\Documents\GitHub\ABC CMS\Business\obj\Debug\Business.vbprojResolveAssemblyReference.cache
+C:\Users\Elie\Documents\GitHub\ABC CMS\Business\obj\Debug\Business.Resources.resources
+C:\Users\Elie\Documents\GitHub\ABC CMS\Business\obj\Debug\Business.vbproj.GenerateResource.Cache
+C:\Users\Elie\Documents\GitHub\ABC CMS\Business\obj\Debug\Business.xml
+C:\Users\Elie\Documents\GitHub\ABC CMS\Business\obj\Debug\Business.pdb

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ABC_CMSApplicationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ABC_CMSApplicationModelStoreContainer">
+    <EntitySet Name="ActionLogs" EntityType="ABC_CMSApplicationModel.Store.ActionLogs" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="Entities" EntityType="ABC_CMSApplicationModel.Store.Entities" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="ErrorLogs" EntityType="ABC_CMSApplicationModel.Store.ErrorLogs" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="Menus" EntityType="ABC_CMSApplicationModel.Store.Menus" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="Pages" EntityType="ABC_CMSApplicationModel.Store.Pages" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="PagesPermissions" EntityType="ABC_CMSApplicationModel.Store.PagesPermissions" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="PermissionControlsTypes" EntityType="ABC_CMSApplicationModel.Store.PermissionControlsTypes" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="PermissionsActions" EntityType="ABC_CMSApplicationModel.Store.PermissionsActions" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="PermissionsControls" EntityType="ABC_CMSApplicationModel.Store.PermissionsControls" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="PermissionsTypes" EntityType="ABC_CMSApplicationModel.Store.PermissionsTypes" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="Roles" EntityType="ABC_CMSApplicationModel.Store.Roles" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="RolesPermissions" EntityType="ABC_CMSApplicationModel.Store.RolesPermissions" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="Users" EntityType="ABC_CMSApplicationModel.Store.Users" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="UsersActions" EntityType="ABC_CMSApplicationModel.Store.UsersActions" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="UsersRoles" EntityType="ABC_CMSApplicationModel.Store.UsersRoles" store:Type="Tables" Schema="cms" />
+    <EntitySet Name="v_GetActionLogsInformation" EntityType="ABC_CMSApplicationModel.Store.v_GetActionLogsInformation" store:Type="Views" store:Schema="cms" store:Name="v_GetActionLogsInformation">
+      <DefiningQuery>SELECT 
+      [v_GetActionLogsInformation].[ActionLogId] AS [ActionLogId], 
+      [v_GetActionLogsInformation].[UserId] AS [UserId], 
+      [v_GetActionLogsInformation].[PagePermissionId] AS [PagePermissionId], 
+      [v_GetActionLogsInformation].[ActionLogControlId] AS [ActionLogControlId], 
+      [v_GetActionLogsInformation].[ActionLogDate] AS [ActionLogDate], 
+      [v_GetActionLogsInformation].[ActionLogDateMMS] AS [ActionLogDateMMS], 
+      [v_GetActionLogsInformation].[UserActionId] AS [UserActionId], 
+      [v_GetActionLogsInformation].[Username] AS [Username], 
+      [v_GetActionLogsInformation].[PagePermissionName] AS [PagePermissionName], 
+      [v_GetActionLogsInformation].[PermissionControlName] AS [PermissionControlName], 
+      [v_GetActionLogsInformation].[UserActionName] AS [UserActionName], 
+      [v_GetActionLogsInformation].[PageName] AS [PageName], 
+      [v_GetActionLogsInformation].[Description] AS [Description], 
+      [v_GetActionLogsInformation].[PageId] AS [PageId]
+      FROM [cms].[v_GetActionLogsInformation] AS [v_GetActionLogsInformation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="v_GetErrorLogsInformation" EntityType="ABC_CMSApplicationModel.Store.v_GetErrorLogsInformation" store:Type="Views" store:Schema="cms" store:Name="v_GetErrorLogsInformation">
+      <DefiningQuery>SELECT 
+      [v_GetErrorLogsInformation].[ErrorLogId] AS [ErrorLogId], 
+      [v_GetErrorLogsInformation].[ErrorLogDate] AS [ErrorLogDate], 
+      [v_GetErrorLogsInformation].[ErrorLogDateMMS] AS [ErrorLogDateMMS], 
+      [v_GetErrorLogsInformation].[Message] AS [Message], 
+      [v_GetErrorLogsInformation].[StackTrace] AS [StackTrace], 
+      [v_GetErrorLogsInformation].[InnerException] AS [InnerException], 
+      [v_GetErrorLogsInformation].[Source] AS [Source], 
+      [v_GetErrorLogsInformation].[Username] AS [Username], 
+      [v_GetErrorLogsInformation].[PermissionControlName] AS [PermissionControlName], 
+      [v_GetErrorLogsInformation].[UserActionName] AS [UserActionName], 
+      [v_GetErrorLogsInformation].[UserId] AS [UserId]
+      FROM [cms].[v_GetErrorLogsInformation] AS [v_GetErrorLogsInformation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="v_GetMenuByUser" EntityType="ABC_CMSApplicationModel.Store.v_GetMenuByUser" store:Type="Views" store:Schema="cms" store:Name="v_GetMenuByUser">
+      <DefiningQuery>SELECT 
+      [v_GetMenuByUser].[MenuId] AS [MenuId], 
+      [v_GetMenuByUser].[MenuPermissionTypeId] AS [MenuPermissionTypeId], 
+      [v_GetMenuByUser].[MenuOrder] AS [MenuOrder], 
+      [v_GetMenuByUser].[MenuParentId] AS [MenuParentId], 
+      [v_GetMenuByUser].[MenuName] AS [MenuName], 
+      [v_GetMenuByUser].[MenuDescription] AS [MenuDescription], 
+      [v_GetMenuByUser].[MenuPath] AS [MenuPath], 
+      [v_GetMenuByUser].[MenuPageId] AS [MenuPageId], 
+      [v_GetMenuByUser].[IsActive] AS [IsActive], 
+      [v_GetMenuByUser].[UserId] AS [UserId]
+      FROM [cms].[v_GetMenuByUser] AS [v_GetMenuByUser]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="v_GetUsersInformations" EntityType="ABC_CMSApplicationModel.Store.v_GetUsersInformations" store:Type="Views" store:Schema="cms" store:Name="v_GetUsersInformations">
+      <DefiningQuery>SELECT 
+      [v_GetUsersInformations].[Username] AS [Username], 
+      [v_GetUsersInformations].[Password] AS [Password], 
+      [v_GetUsersInformations].[Email] AS [Email], 
+      [v_GetUsersInformations].[FirstName] AS [FirstName], 
+      [v_GetUsersInformations].[LastName] AS [LastName], 
+      [v_GetUsersInformations].[IsActive] AS [IsActive], 
+      [v_GetUsersInformations].[UserId] AS [UserId], 
+      [v_GetUsersInformations].[EntityId] AS [EntityId], 
+      [v_GetUsersInformations].[CreationDate] AS [CreationDate], 
+      [v_GetUsersInformations].[CreationDateMMS] AS [CreationDateMMS], 
+      [v_GetUsersInformations].[ModificationDate] AS [ModificationDate], 
+      [v_GetUsersInformations].[ModificationDateMMS] AS [ModificationDateMMS]
+      FROM [cms].[v_GetUsersInformations] AS [v_GetUsersInformations]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="ActionLogs">
+    <Key>
+      <PropertyRef Name="ActionLogId" />
+    </Key>
+    <Property Name="ActionLogId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="bigint" />
+    <Property Name="PagePermissionId" Type="bigint" />
+    <Property Name="ActionLogControlId" Type="bigint" />
+    <Property Name="ActionLogDate" Type="datetime" />
+    <Property Name="ActionLogDateMMS" Type="numeric" Precision="6" />
+    <Property Name="UserActionId" Type="bigint" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Entities">
+    <Key>
+      <PropertyRef Name="EntityId" />
+    </Key>
+    <Property Name="EntityId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CreationDateMMS" Type="numeric" Precision="6" />
+    <Property Name="ModificationDate" Type="datetime" />
+    <Property Name="ModificationDateMMS" Type="numeric" Precision="6" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ErrorLogs">
+    <Key>
+      <PropertyRef Name="ErrorLogId" />
+    </Key>
+    <Property Name="ErrorLogId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="bigint" />
+    <Property Name="ErrorLogDate" Type="datetime" />
+    <Property Name="ErrorLogDateMMS" Type="numeric" Precision="6" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="StackTrace" Type="nvarchar(max)" />
+    <Property Name="InnerException" Type="nvarchar(max)" />
+    <Property Name="Source" Type="nvarchar" MaxLength="250" />
+    <Property Name="ErrorLogControlId" Type="bigint" />
+    <Property Name="UserActionId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Menus">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MenuPermissionTypeId" Type="bigint" />
+    <Property Name="MenuOrder" Type="int" />
+    <Property Name="MenuParentId" Type="int" />
+    <Property Name="MenuName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="MenuPath" Type="nvarchar" MaxLength="100" />
+    <Property Name="MenuPageId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Pages">
+    <Key>
+      <PropertyRef Name="PageId" />
+    </Key>
+    <Property Name="PageId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PageName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PageDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="PagePermissionTypeId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PagesPermissions">
+    <Key>
+      <PropertyRef Name="PagePermissionId" />
+    </Key>
+    <Property Name="PagePermissionId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PagePermissionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PagePermissionDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="PagePermissionPageId" Type="nvarchar" MaxLength="50" />
+    <Property Name="PagePermissionTypeId" Type="bigint" />
+    <Property Name="IsEnabled" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PermissionControlsTypes">
+    <Key>
+      <PropertyRef Name="PermissionControlsTypeId" />
+    </Key>
+    <Property Name="PermissionControlsTypeId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionControlTypeName" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PermissionsActions">
+    <Key>
+      <PropertyRef Name="PermissionActionId" />
+    </Key>
+    <Property Name="PermissionActionId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionActionPagePermissionId" Type="bigint" />
+    <Property Name="PermissionActionPermissionControlId" Type="bigint" />
+    <Property Name="PermissionActionRoleId" Type="bigint" />
+    <Property Name="Create" Type="bit" />
+    <Property Name="Read" Type="bit" />
+    <Property Name="Update" Type="bit" />
+    <Property Name="Delete" Type="bit" />
+  </EntityType>
+  <EntityType Name="PermissionsControls">
+    <Key>
+      <PropertyRef Name="PermissionControlId" />
+    </Key>
+    <Property Name="PermissionControlId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionControlName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PermissionControlTypeId" Type="bigint" />
+    <Property Name="PermissionControlPageId" Type="bigint" />
+    <Property Name="PermissionControlPagePermissionId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PermissionsTypes">
+    <Key>
+      <PropertyRef Name="PermissionTypeId" />
+    </Key>
+    <Property Name="PermissionTypeId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionTypeName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="RoleDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="RolesPermissions">
+    <Key>
+      <PropertyRef Name="RolePermissionId" />
+    </Key>
+    <Property Name="RolePermissionId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="bigint" />
+    <Property Name="PagePermissionId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="EntityId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="ModificationDate" Type="datetime" />
+    <Property Name="ModificationDateMMS" Type="numeric" Precision="6" />
+  </EntityType>
+  <EntityType Name="UsersActions">
+    <Key>
+      <PropertyRef Name="UserActionId" />
+    </Key>
+    <Property Name="UserActionId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserActionName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UsersRoles">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="bigint" />
+    <Property Name="UserId" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ABC_CMSApplication.cms.v_GetActionLogsInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="v_GetActionLogsInformation">
+    <Key>
+      <PropertyRef Name="ActionLogId" />
+    </Key>
+    <Property Name="ActionLogId" Type="bigint" Nullable="false" />
+    <Property Name="UserId" Type="bigint" />
+    <Property Name="PagePermissionId" Type="bigint" />
+    <Property Name="ActionLogControlId" Type="bigint" />
+    <Property Name="ActionLogDate" Type="datetime" />
+    <Property Name="ActionLogDateMMS" Type="numeric" Precision="6" />
+    <Property Name="UserActionId" Type="bigint" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PagePermissionName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PermissionControlName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserActionName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PageName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PageId" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ABC_CMSApplication.cms.v_GetErrorLogsInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="v_GetErrorLogsInformation">
+    <Key>
+      <PropertyRef Name="ErrorLogId" />
+      <PropertyRef Name="Username" />
+      <PropertyRef Name="PermissionControlName" />
+      <PropertyRef Name="UserActionName" />
+    </Key>
+    <Property Name="ErrorLogId" Type="bigint" Nullable="false" />
+    <Property Name="ErrorLogDate" Type="datetime" />
+    <Property Name="ErrorLogDateMMS" Type="numeric" Precision="6" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="StackTrace" Type="nvarchar(max)" />
+    <Property Name="InnerException" Type="nvarchar(max)" />
+    <Property Name="Source" Type="nvarchar" MaxLength="250" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PermissionControlName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserActionName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserId" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ABC_CMSApplication.cms.v_GetMenuByUser' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="v_GetMenuByUser">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="bigint" Nullable="false" />
+    <Property Name="MenuPermissionTypeId" Type="bigint" />
+    <Property Name="MenuOrder" Type="int" />
+    <Property Name="MenuParentId" Type="int" />
+    <Property Name="MenuName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="MenuPath" Type="nvarchar" MaxLength="100" />
+    <Property Name="MenuPageId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="UserId" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ABC_CMSApplication.cms.v_GetUsersInformations' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="v_GetUsersInformations">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="EntityId" />
+    </Key>
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="UserId" Type="bigint" Nullable="false" />
+    <Property Name="EntityId" Type="bigint" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CreationDateMMS" Type="numeric" Precision="6" />
+    <Property Name="ModificationDate" Type="datetime" />
+    <Property Name="ModificationDateMMS" Type="numeric" Precision="6" />
+  </EntityType>
+</Schema>

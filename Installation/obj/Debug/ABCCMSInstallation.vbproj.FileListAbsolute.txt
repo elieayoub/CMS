@@ -1,0 +1,31 @@
+D:\Work\Projects\ABC CMS Installation\bin\WebApplication1.dll
+D:\Work\Projects\ABC CMS Installation\bin\WebApplication1.pdb
+D:\Work\Projects\ABC CMS Installation\bin\WebApplication1.xml
+D:\Work\Projects\ABC CMS Installation\bin\Ionic.Zip.dll
+D:\Work\Projects\ABC CMS Installation\bin\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Work\Projects\ABC CMS Installation\bin\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\Work\Projects\ABC CMS Installation\bin\Microsoft.SqlServer.Smo.dll
+D:\Work\Projects\ABC CMS Installation\obj\Debug\WebApplication1.Resources.resources
+D:\Work\Projects\ABC CMS Installation\obj\Debug\ABCCMSInstallation.vbproj.GenerateResource.Cache
+D:\Work\Projects\ABC CMS Installation\obj\Debug\WebApplication1.dll
+D:\Work\Projects\ABC CMS Installation\obj\Debug\WebApplication1.xml
+D:\Work\Projects\ABC CMS Installation\obj\Debug\WebApplication1.pdb
+D:\Work\Projects\ABC CMS Installation\obj\Debug\ABCCMSInstallation.vbprojResolveAssemblyReference.cache
+D:\Work\Projects\ABC CMS\Installation\bin\WebApplication1.dll
+D:\Work\Projects\ABC CMS\Installation\bin\WebApplication1.pdb
+D:\Work\Projects\ABC CMS\Installation\bin\WebApplication1.xml
+D:\Work\Projects\ABC CMS\Installation\bin\Ionic.Zip.dll
+D:\Work\Projects\ABC CMS\Installation\bin\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Work\Projects\ABC CMS\Installation\bin\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\Work\Projects\ABC CMS\Installation\bin\Microsoft.SqlServer.Smo.dll
+D:\Work\Projects\ABC CMS\Installation\obj\Debug\WebApplication1.Resources.resources
+D:\Work\Projects\ABC CMS\Installation\obj\Debug\ABCCMSInstallation.vbproj.GenerateResource.Cache
+D:\Work\Projects\ABC CMS\Installation\obj\Debug\WebApplication1.dll
+D:\Work\Projects\ABC CMS\Installation\obj\Debug\WebApplication1.xml
+D:\Work\Projects\ABC CMS\Installation\obj\Debug\WebApplication1.pdb
+D:\Work\Projects\ABC CMS\Installation\obj\Debug\ABCCMSInstallation.vbprojResolveAssemblyReference.cache
+C:\Users\Elie\Documents\GitHub\ABC CMS\Installation\obj\Debug\ABCCMSInstallation.vbprojResolveAssemblyReference.cache
+C:\Users\Elie\Documents\GitHub\ABC CMS\Installation\obj\Debug\WebApplication1.Resources.resources
+C:\Users\Elie\Documents\GitHub\ABC CMS\Installation\obj\Debug\ABCCMSInstallation.vbproj.GenerateResource.Cache
+C:\Users\Elie\Documents\GitHub\ABC CMS\Installation\obj\Debug\WebApplication1.xml
+C:\Users\Elie\Documents\GitHub\ABC CMS\Installation\obj\Debug\WebApplication1.pdb

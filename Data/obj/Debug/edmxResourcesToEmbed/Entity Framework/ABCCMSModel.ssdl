@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ABC_CMSApplicationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ABC_CMSApplicationModelStoreContainer">
+    <EntitySet Name="ActionLogs" EntityType="ABC_CMSApplicationModel.Store.ActionLogs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Entities" EntityType="ABC_CMSApplicationModel.Store.Entities" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ErrorLogs" EntityType="ABC_CMSApplicationModel.Store.ErrorLogs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Menus" EntityType="ABC_CMSApplicationModel.Store.Menus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pages" EntityType="ABC_CMSApplicationModel.Store.Pages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermissionControlsTypes" EntityType="ABC_CMSApplicationModel.Store.PermissionControlsTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Permissions" EntityType="ABC_CMSApplicationModel.Store.Permissions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermissionsActions" EntityType="ABC_CMSApplicationModel.Store.PermissionsActions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermissionsControls" EntityType="ABC_CMSApplicationModel.Store.PermissionsControls" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermissionsTypes" EntityType="ABC_CMSApplicationModel.Store.PermissionsTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Roles" EntityType="ABC_CMSApplicationModel.Store.Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RolesPermissions" EntityType="ABC_CMSApplicationModel.Store.RolesPermissions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="ABC_CMSApplicationModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UsersRoles" EntityType="ABC_CMSApplicationModel.Store.UsersRoles" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="ActionLogs">
+    <Key>
+      <PropertyRef Name="ActionLogId" />
+    </Key>
+    <Property Name="ActionLogId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="bigint" />
+    <Property Name="PermissionId" Type="bigint" />
+    <Property Name="ActionLogDate" Type="datetime" />
+    <Property Name="ActionLogDateMMS" Type="numeric" Precision="6" />
+  </EntityType>
+  <EntityType Name="Entities">
+    <Key>
+      <PropertyRef Name="EntityId" />
+    </Key>
+    <Property Name="EntityId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="CreationDateMMS" Type="numeric" Precision="6" />
+    <Property Name="ModificationDate" Type="datetime" />
+    <Property Name="ModificationDateMMS" Type="numeric" Precision="6" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ErrorLogs">
+    <Key>
+      <PropertyRef Name="ErrorLogId" />
+    </Key>
+    <Property Name="ErrorLogId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="bigint" />
+    <Property Name="ErrorLogDate" Type="datetime" />
+    <Property Name="ErrorLogDateMMS" Type="numeric" Precision="6" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="StackTrace" Type="nvarchar(max)" />
+    <Property Name="InnerException" Type="nvarchar(max)" />
+    <Property Name="Source" Type="nvarchar" MaxLength="250" />
+    <Property Name="ErrorLogControlId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Menus">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MenuPermissionTypeId" Type="bigint" />
+    <Property Name="MenuOrder" Type="int" />
+    <Property Name="MenuParentId" Type="int" />
+    <Property Name="MenuName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="MenuPath" Type="nvarchar" MaxLength="100" />
+    <Property Name="MenuPageId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Pages">
+    <Key>
+      <PropertyRef Name="PageId" />
+    </Key>
+    <Property Name="PageId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PageName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PageDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="PagePermissionTypeId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PermissionControlsTypes">
+    <Key>
+      <PropertyRef Name="PermissionControlsTypeId" />
+    </Key>
+    <Property Name="PermissionControlsTypeId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionControlTypeName" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Permissions">
+    <Key>
+      <PropertyRef Name="PermissionId" />
+    </Key>
+    <Property Name="PermissionId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PermissionDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="PermissionPageId" Type="nvarchar" MaxLength="50" />
+    <Property Name="PermissionControlId" Type="bigint" />
+    <Property Name="PermissionTypeId" Type="bigint" />
+    <Property Name="IsEnabled" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PermissionsActions">
+    <Key>
+      <PropertyRef Name="PermissionActionId" />
+    </Key>
+    <Property Name="PermissionActionId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionId" Type="bigint" />
+    <Property Name="Create" Type="bit" />
+    <Property Name="Read" Type="bit" />
+    <Property Name="Update" Type="bit" />
+    <Property Name="Delete" Type="bit" />
+  </EntityType>
+  <EntityType Name="PermissionsControls">
+    <Key>
+      <PropertyRef Name="PermissionControlId" />
+    </Key>
+    <Property Name="PermissionControlId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionControlName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PermissionControlTypeId" Type="bigint" />
+    <Property Name="PermissionControlPageId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PermissionsTypes">
+    <Key>
+      <PropertyRef Name="PermissionTypeId" />
+    </Key>
+    <Property Name="PermissionTypeId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionTypeName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="RoleDescription" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="RolesPermissions">
+    <Key>
+      <PropertyRef Name="RolePermissionId" />
+    </Key>
+    <Property Name="RolePermissionId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="bigint" />
+    <Property Name="PermissionId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="EntityId" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="UsersRoles">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="bigint" />
+    <Property Name="UserId" Type="bigint" />
+  </EntityType>
+</Schema>

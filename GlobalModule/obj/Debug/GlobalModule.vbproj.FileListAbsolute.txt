@@ -1,0 +1,8 @@
+D:\Work\Projects\ABC CMS\GlobalModule\bin\Debug\GlobalModule.dll
+D:\Work\Projects\ABC CMS\GlobalModule\bin\Debug\GlobalModule.pdb
+D:\Work\Projects\ABC CMS\GlobalModule\bin\Debug\GlobalModule.xml
+D:\Work\Projects\ABC CMS\GlobalModule\obj\Debug\GlobalModule.Resources.resources
+D:\Work\Projects\ABC CMS\GlobalModule\obj\Debug\GlobalModule.vbproj.GenerateResource.Cache
+D:\Work\Projects\ABC CMS\GlobalModule\obj\Debug\GlobalModule.dll
+D:\Work\Projects\ABC CMS\GlobalModule\obj\Debug\GlobalModule.xml
+D:\Work\Projects\ABC CMS\GlobalModule\obj\Debug\GlobalModule.pdb

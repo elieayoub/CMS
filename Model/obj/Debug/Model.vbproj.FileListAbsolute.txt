@@ -1,0 +1,15 @@
+D:\Work\Projects\ABC CMS\Model\bin\Debug\Model.dll
+D:\Work\Projects\ABC CMS\Model\bin\Debug\Model.pdb
+D:\Work\Projects\ABC CMS\Model\bin\Debug\Model.xml
+D:\Work\Projects\ABC CMS\Model\obj\Debug\Model.Resources.resources
+D:\Work\Projects\ABC CMS\Model\obj\Debug\Model.vbproj.GenerateResource.Cache
+D:\Work\Projects\ABC CMS\Model\obj\Debug\Model.dll
+D:\Work\Projects\ABC CMS\Model\obj\Debug\Model.xml
+D:\Work\Projects\ABC CMS\Model\obj\Debug\Model.pdb
+D:\Work\Projects\ABC CMS\Model\bin\Debug\Model.dll.config
+C:\Users\Elie\Documents\GitHub\ABC CMS\Model\bin\Debug\Model.dll.config
+C:\Users\Elie\Documents\GitHub\ABC CMS\Model\obj\Debug\Model.Resources.resources
+C:\Users\Elie\Documents\GitHub\ABC CMS\Model\obj\Debug\Model.vbproj.GenerateResource.Cache
+C:\Users\Elie\Documents\GitHub\ABC CMS\Model\obj\Debug\Model.dll
+C:\Users\Elie\Documents\GitHub\ABC CMS\Model\obj\Debug\Model.xml
+C:\Users\Elie\Documents\GitHub\ABC CMS\Model\obj\Debug\Model.pdb

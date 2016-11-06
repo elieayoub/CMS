@@ -1,0 +1,13 @@
+D:\Work\Projects\ABC CMS\Data\bin\Debug\Data.dll
+D:\Work\Projects\ABC CMS\Data\bin\Debug\Data.pdb
+D:\Work\Projects\ABC CMS\Data\bin\Debug\Data.xml
+D:\Work\Projects\ABC CMS\Data\obj\Debug\Data.Resources.resources
+D:\Work\Projects\ABC CMS\Data\obj\Debug\Data.vbproj.GenerateResource.Cache
+D:\Work\Projects\ABC CMS\Data\obj\Debug\Data.dll
+D:\Work\Projects\ABC CMS\Data\obj\Debug\Data.xml
+D:\Work\Projects\ABC CMS\Data\obj\Debug\Data.pdb
+D:\Work\Projects\ABC CMS\Data\bin\Debug\Model.dll
+D:\Work\Projects\ABC CMS\Data\obj\Debug\Data.vbprojResolveAssemblyReference.cache
+D:\Work\Projects\ABC CMS\Data\bin\Debug\CommonLibrary.dll
+D:\Work\Projects\ABC CMS\Data\bin\Debug\CommonLibrary.pdb
+D:\Work\Projects\ABC CMS\Data\bin\Debug\CommonLibrary.xml

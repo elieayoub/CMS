@@ -1,0 +1,652 @@
+﻿html
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial, Tahoma, Sans-Serif;
+    font-size: 12px;
+    color: #000;
+    min-width: 1280px;
+}
+
+Footer
+{
+    width: 100%;
+    float: left;
+    min-height: 30px; /*background-image: url("../images/footer_separator.png");     background-repeat: repeat-x;     background-position: center top;*/
+}
+
+img
+{
+    border: 0;
+    border: none;
+    outline: 0;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+}
+
+th a
+{
+    color: #000000;
+}
+
+input[type='text'], textarea, input[type='password']
+{
+    font-family: Verdana, Arial, Tahoma, Sans-Serif;
+    font-size: 11px;
+    color: #000;
+    width: 200px;
+    height: 16px;
+    border: 1px solid #8BA0BC;
+    width: 205px;
+}
+
+input[disabled='disabled']
+{
+    color: #ccc !important;
+    cursor: default;
+}
+
+textarea
+{
+    width: 300px;
+    height: 120px;
+    resize: none;
+}
+
+.LoginContent input[type='text']
+{
+    display: inline;
+    font-family: Verdana, Arial, Tahoma, Sans-Serif;
+    font-size: 11px;
+    color: #000;
+    height: 16px;
+    border: 1px solid #8BA0BC;
+    width: 485px;
+}
+.LoginContent input[type='password']
+{
+    display: inline;
+    font-family: Verdana, Arial, Tahoma, Sans-Serif;
+    font-size: 11px;
+    color: #000;
+    height: 16px;
+    border: 1px solid #8BA0BC;
+    width: 485px;
+}
+
+input[type='button'], input[type='submit']
+{
+    display: inline;
+    height: 22px;
+    padding: 0 10px 0 10px;
+}
+
+.validators
+{
+    color: #FF0000;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.message
+{
+    color: #8BA0BC;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.Table
+{
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.TableRow
+{
+    display: table-row;
+}
+
+.TableCell
+{
+    display: table-cell;
+}
+
+
+
+.dxbButton_Office2010Blue
+{
+    color: #1e395b;
+    font: normal 11px Verdana;
+    vertical-align: middle;
+    border: 1px solid #abbad0;
+    background: #d1dfef url('../../Images/button_Office2010_up.png') repeat-x left top;
+    padding: 1px;
+    cursor: pointer;
+}
+.dxbButtonHover_Office2010Blue
+{
+    color: #1e395b;
+    background: #fcf8e5 url('../../Images/button_Office2010_over.png') repeat-x left top;
+    border: 1px solid #eecc53;
+}
+.dxbButtonPressed_Office2010Blue
+{
+    color: #1e395b;
+    background: #fee287 url('../../Images/button_Office2010_down.png') repeat-x left top;
+    border: 1px solid #c2762b;
+}
+
+.DisplayNone
+{
+    display: none !important;
+}
+
+.DisplayBlock
+{
+    display: block !important;
+}
+
+.Strong
+{
+    font-weight: bold !important;
+}
+
+.Underline
+{
+    text-decoration: underline;
+}
+
+.Show
+{
+    visibility: visible !important;
+}
+
+.Hide
+{
+    visibility: hidden !important;
+}
+
+.OverLoader
+{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    margin-top: 10%;
+    background-color: #FFF;
+    opacity: 0.9;
+    text-align: center;
+    display: none;
+}
+
+.NoAccessBox
+{
+    background-image: url("../images/noAccess.gif");
+    background-repeat: no-repeat;
+    width: 91px;
+    height: 18px;
+    float: left;
+}
+
+
+input[type='button'], input[type='submit']
+{
+    display: inline;
+    height: 22px;
+    padding: 0 10px 0 10px;
+}
+
+
+.validators
+{
+    color: #FF0000;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.message
+{
+    color: #8BA0BC;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#LoginWrapper
+{
+    width: 100%;
+    color: #000;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+#Login
+{
+    width: 490px;
+    height: 400px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.LoginTitle
+{
+    width: 100%;
+    color: #8BA0BC;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #eee;
+    padding-top: 5px;
+    height: 25px;
+}
+
+.LoginContent
+{
+    width: 100%;
+    text-align: left;
+}
+
+
+#Header
+{
+    width: 100%;
+    height: 85px;
+}
+
+#Logo
+{
+    width: 200px;
+    height: 85px;
+    float: left;
+}
+
+
+#HeaderCenterContent
+{
+    height: 85px;
+    left: 50%;
+    margin-left: -200px;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+}
+
+#HeaderRightContent
+{
+    width: 200px;
+    height: 40px;
+    float: right;
+    padding-top: 45px;
+}
+
+#HeaderWelcomeMessage
+{
+    font-size: 11px;
+    text-overflow: ellipsis;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: right;
+    margin-left: -2px;
+}
+
+#HomeTopMenuContent
+{
+    height: 20px;
+    padding-top: 5px;
+    width: 100%;
+    text-align: right;
+}
+
+#HomeTopMenuContent ul.Menu
+{
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#HomeTopMenuContent ul.Menu li
+{
+    float: left;
+    padding-right: 5px;
+    font-size: 11px;
+}
+
+#HomeTopMenuContent ul.Menu li.sep
+{
+    color: #000;
+}
+
+#HomeTopMenuContent ul.Menu li a
+{
+    text-decoration: none;
+}
+
+#HomeTopMenuContent ul.Menu li a:hover
+{
+    color: #999;
+}
+
+#HomeMenuContent
+{
+    height: 30px;
+    width: 100%;
+    background-color: #8BA0BC;
+}
+
+#HomeMenuContent ul.Menu
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#HomeMenuContent ul.Menu li
+{
+    float: left;
+    padding: 5px 10px 5px 5px;
+    height: 20px;
+}
+
+#HomeMenuContent ul.Menu li.HasSub
+{
+    width: 140px;
+}
+
+#HomeMenuContent ul.Menu li.sep
+{
+    color: #000;
+}
+
+#HomeMenuContent ul.Menu li a
+{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#HomeMenuContent ul.Menu li a:hover
+{
+    color: #ffcc00;
+}
+
+#HomeMenuContent ul.Menu li:hover a.top
+{
+    cursor: default;
+    color: #ffcc00;
+}
+#HomeMenuContent ul.Menu li a.top
+{
+    width: 140px;
+    text-align: center;
+}
+
+#HomeMenuContent ul.Menu li a.pressed
+{
+    color: #ffcc00;
+    cursor: default;
+}
+
+
+#HomeMenuContent ul.Menu li:hover ul.submenu
+{
+    display: block;
+}
+
+#HomeMenuContent ul.Menu li ul.submenu
+{
+    list-style: none;
+    padding: 0;
+    background-color: #CCC;
+    display: none;
+    z-index: 999999999999999;
+    position: absolute;
+    margin: 25px 0 0 -18px;
+    width: 175px;
+}
+
+#HomeMenuContent ul.Menu li ul.submenu li
+{
+    float: none;
+    padding: 5px 10px 5px 18px;
+}
+
+#HomeMenuContent ul.Menu li ul.submenu li a
+{
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+#HomeMenuContent ul.Menu li ul.submenu li a:hover
+{
+    color: #000;
+}
+
+.MainContent
+{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.MainContentSeperator
+{
+    width: 100%;
+    height: 10px;
+    float: left;
+    background: -moz-linear-gradient(top, rgba(204,204,204,0.65) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,0.65)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(204,204,204,0.65) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(204,204,204,0.65) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(204,204,204,0.65) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(204,204,204,0.65) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6cccccc', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.FooterContent
+{
+    width: 100%;
+    float: left;
+}
+
+#SearchContainer
+{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-left: 2px;
+}
+
+#SearchContainer div
+{
+    float: left;
+    margin-right: 10px;
+}
+
+#UsersContent input[type='text'], #UsersContent input[type='password'], #RolesContent input[type='text'], #RolesContent input[type='password'], #ErrorLogsContent input[type='text'], #ActionLogsContent input[type='text'], #ChangePasswordContent input[type='text'], #ChangePasswordContent input[type='password'], #ResetPasswordContent input[type='text']
+{
+    width: 300px;
+}
+
+#UsersContent, #RolesContent, #ErrorLogsContent, #ActionLogsContent, #ChangePasswordContent, #ResetPasswordContent
+{
+    float: left;
+    width: auto;
+    padding: 5px;
+    min-height: 300px;
+}
+
+#UsersContent div.rows, #RolesContent div.rows
+{
+    width: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#ErrorLogsContent div.rows, #ActionLogsContent div.rows
+{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#UsersContent div div.lbl, #RolesContent div div.lbl, #ErrorLogsContent div div.lbl, #ActionLogsContent div div.lbl
+{
+    background-color: #eee;
+    float: left;
+    width: 150px;
+    height: 18px;
+    padding: 2px 0 0 2px;
+    font-weight: bold;
+}
+
+#ChangePasswordContent div div.lbl
+{
+    background-color: #eee;
+    float: left;
+    width: 180px;
+    height: 18px;
+    padding: 2px 0 0 2px;
+    font-weight: bold;
+}
+
+#ChangePasswordContent div.rows
+{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#ChangePasswordContent div div.txt
+{
+    float: left;
+    width: auto;
+}
+
+#ResetPasswordContent div div.lbl
+{
+    background-color: #eee;
+    float: left;
+    width: 180px;
+    height: 18px;
+    padding: 2px 0 0 2px;
+    font-weight: bold;
+}
+
+#ResetPasswordContent div.rows
+{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#ResetPasswordContent div div.txt
+{
+    float: left;
+    width: auto;
+    padding-left: 5px;
+}
+
+#UsersContent div div.txt, #RolesContent div div.txt
+{
+    float: left;
+    width: 450px;
+}
+
+#ErrorLogsContent div div.txt, #ActionLogsContent div div.txt
+{
+    float: left;
+    width: 450px;
+    padding-left: 4px;
+}
+
+#UsersContent div div.btn, #RolesContent div div.btn, #ErrorLogsContent div div.btn, #ActionLogsContent div div.btn, #ChangePasswordContent div div.btn, #ResetPasswordContent div div.btn
+{
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+.ContentHeaderTitle
+{
+    width: 99%;
+    margin-bottom: 10px;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    background-image: url("../images/rightarrow.gif");
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    padding-left: 13px;
+}
+
+.RolesPermissionsMenuName
+{
+    display: block;
+    font-weight: bold;
+}
+
+.RolesPermissionsMenuName_Sub
+{
+    display: block;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.RolesPermissionsMenus
+{
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.RolesPermissionsMenus_Sub
+{
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.RolesPermissionsMenus_Sub:last-child
+{
+    padding-bottom: 0;
+}
+
+.RolesPermissions_ControlName
+{
+    padding-left: 10px;
+}
+
+.RolesPagesControlsPermissionsTableCell
+{
+    width: 50%;
+    vertical-align: middle;
+    padding: 8px;
+    border-bottom: 1px solid #000;
+}

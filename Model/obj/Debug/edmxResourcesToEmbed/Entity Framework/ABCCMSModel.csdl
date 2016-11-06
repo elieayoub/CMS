@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ABC_CMSApplicationModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ABC_CMSApplicationEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Entities" EntityType="ABC_CMSApplicationModel.Entity" />
+    <EntitySet Name="ErrorLogs" EntityType="ABC_CMSApplicationModel.ErrorLog" />
+    <EntitySet Name="Menus" EntityType="ABC_CMSApplicationModel.Menu" />
+    <EntitySet Name="Pages" EntityType="ABC_CMSApplicationModel.Page" />
+    <EntitySet Name="PagesPermissions" EntityType="ABC_CMSApplicationModel.PagesPermission" />
+    <EntitySet Name="PermissionControlsTypes" EntityType="ABC_CMSApplicationModel.PermissionControlsType" />
+    <EntitySet Name="PermissionsActions" EntityType="ABC_CMSApplicationModel.PermissionsAction" />
+    <EntitySet Name="PermissionsControls" EntityType="ABC_CMSApplicationModel.PermissionsControl" />
+    <EntitySet Name="PermissionsTypes" EntityType="ABC_CMSApplicationModel.PermissionsType" />
+    <EntitySet Name="Roles" EntityType="ABC_CMSApplicationModel.Role" />
+    <EntitySet Name="RolesPermissions" EntityType="ABC_CMSApplicationModel.RolesPermission" />
+    <EntitySet Name="Users" EntityType="ABC_CMSApplicationModel.User" />
+    <EntitySet Name="UsersActions" EntityType="ABC_CMSApplicationModel.UsersAction" />
+    <EntitySet Name="UsersRoles" EntityType="ABC_CMSApplicationModel.UsersRole" />
+    <EntitySet Name="v_GetErrorLogsInformation" EntityType="ABC_CMSApplicationModel.v_GetErrorLogsInformation" />
+    <EntitySet Name="v_GetMenuByUser" EntityType="ABC_CMSApplicationModel.v_GetMenuByUser" />
+    <EntitySet Name="v_GetUsersInformations" EntityType="ABC_CMSApplicationModel.v_GetUsersInformations" />
+    <EntitySet Name="ActionLogs" EntityType="ABC_CMSApplicationModel.ActionLog" />
+    <EntitySet Name="v_GetActionLogsInformation" EntityType="ABC_CMSApplicationModel.v_GetActionLogsInformation" />
+  </EntityContainer>
+  <EntityType Name="Entity">
+    <Key>
+      <PropertyRef Name="EntityId" />
+    </Key>
+    <Property Type="Int64" Name="EntityId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" />
+    <Property Type="Decimal" Name="CreationDateMMS" Precision="6" Scale="0" />
+    <Property Type="DateTime" Name="ModificationDate" />
+    <Property Type="Decimal" Name="ModificationDateMMS" Precision="6" Scale="0" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogId" />
+    </Key>
+    <Property Type="Int64" Name="ErrorLogId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="UserId" />
+    <Property Type="DateTime" Name="ErrorLogDate" />
+    <Property Type="Decimal" Name="ErrorLogDateMMS" Precision="6" Scale="0" />
+    <Property Type="String" Name="Message" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StackTrace" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InnerException" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Source" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ErrorLogControlId" />
+    <Property Type="Int64" Name="UserActionId" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Type="Int64" Name="MenuId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="MenuPermissionTypeId" />
+    <Property Type="Int32" Name="MenuOrder" />
+    <Property Type="Int32" Name="MenuParentId" />
+    <Property Type="String" Name="MenuName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MenuDescription" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MenuPath" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="MenuPageId" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="Page">
+    <Key>
+      <PropertyRef Name="PageId" />
+    </Key>
+    <Property Type="Int64" Name="PageId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PageName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PageDescription" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="PagePermissionTypeId" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="PagesPermission">
+    <Key>
+      <PropertyRef Name="PagePermissionId" />
+    </Key>
+    <Property Type="Int64" Name="PagePermissionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PagePermissionName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PagePermissionDescription" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PagePermissionPageId" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="PagePermissionTypeId" />
+    <Property Type="Boolean" Name="IsEnabled" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="PermissionControlsType">
+    <Key>
+      <PropertyRef Name="PermissionControlsTypeId" />
+    </Key>
+    <Property Type="Int64" Name="PermissionControlsTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PermissionControlTypeName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="PermissionsAction">
+    <Key>
+      <PropertyRef Name="PermissionActionId" />
+    </Key>
+    <Property Type="Int64" Name="PermissionActionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="PermissionActionPagePermissionId" />
+    <Property Type="Int64" Name="PermissionActionPermissionControlId" />
+    <Property Type="Int64" Name="PermissionActionRoleId" />
+    <Property Type="Boolean" Name="Create" />
+    <Property Type="Boolean" Name="Read" />
+    <Property Type="Boolean" Name="Update" />
+    <Property Type="Boolean" Name="Delete" />
+  </EntityType>
+  <EntityType Name="PermissionsControl">
+    <Key>
+      <PropertyRef Name="PermissionControlId" />
+    </Key>
+    <Property Type="Int64" Name="PermissionControlId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PermissionControlName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="PermissionControlTypeId" />
+    <Property Type="Int64" Name="PermissionControlPageId" />
+    <Property Type="Int64" Name="PermissionControlPagePermissionId" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="PermissionsType">
+    <Key>
+      <PropertyRef Name="PermissionTypeId" />
+    </Key>
+    <Property Type="Int64" Name="PermissionTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PermissionTypeName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Int64" Name="RoleId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RoleName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleDescription" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="RolesPermission">
+    <Key>
+      <PropertyRef Name="RolePermissionId" />
+    </Key>
+    <Property Type="Int64" Name="RolePermissionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="RoleId" />
+    <Property Type="Int64" Name="PagePermissionId" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int64" Name="UserId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="EntityId" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="DateTime" Name="ModificationDate" />
+    <Property Type="Decimal" Name="ModificationDateMMS" Precision="6" Scale="0" />
+  </EntityType>
+  <EntityType Name="UsersAction">
+    <Key>
+      <PropertyRef Name="UserActionId" />
+    </Key>
+    <Property Type="Int64" Name="UserActionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserActionName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UsersRole">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Type="Int64" Name="UserRoleId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="RoleId" />
+    <Property Type="Int64" Name="UserId" />
+  </EntityType>
+  <EntityType Name="v_GetErrorLogsInformation">
+    <Key>
+      <PropertyRef Name="ErrorLogId" />
+      <PropertyRef Name="Username" />
+      <PropertyRef Name="PermissionControlName" />
+      <PropertyRef Name="UserActionName" />
+    </Key>
+    <Property Type="Int64" Name="ErrorLogId" Nullable="false" />
+    <Property Type="DateTime" Name="ErrorLogDate" />
+    <Property Type="Decimal" Name="ErrorLogDateMMS" Precision="6" Scale="0" />
+    <Property Type="String" Name="Message" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StackTrace" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InnerException" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Source" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PermissionControlName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UserActionName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="UserId" />
+  </EntityType>
+  <EntityType Name="v_GetMenuByUser">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Type="Int64" Name="MenuId" Nullable="false" />
+    <Property Type="Int64" Name="MenuPermissionTypeId" />
+    <Property Type="Int32" Name="MenuOrder" />
+    <Property Type="Int32" Name="MenuParentId" />
+    <Property Type="String" Name="MenuName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MenuDescription" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MenuPath" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="MenuPageId" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Int64" Name="UserId" />
+  </EntityType>
+  <EntityType Name="v_GetUsersInformations">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="EntityId" />
+    </Key>
+    <Property Type="String" Name="Username" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Int64" Name="UserId" Nullable="false" />
+    <Property Type="Int64" Name="EntityId" Nullable="false" />
+    <Property Type="DateTime" Name="CreationDate" />
+    <Property Type="Decimal" Name="CreationDateMMS" Precision="6" Scale="0" />
+    <Property Type="DateTime" Name="ModificationDate" />
+    <Property Type="Decimal" Name="ModificationDateMMS" Precision="6" Scale="0" />
+  </EntityType>
+  <EntityType Name="ActionLog">
+    <Key>
+      <PropertyRef Name="ActionLogId" />
+    </Key>
+    <Property Type="Int64" Name="ActionLogId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="UserId" />
+    <Property Type="Int64" Name="PagePermissionId" />
+    <Property Type="Int64" Name="ActionLogControlId" />
+    <Property Type="DateTime" Name="ActionLogDate" />
+    <Property Type="Decimal" Name="ActionLogDateMMS" Precision="6" Scale="0" />
+    <Property Type="Int64" Name="UserActionId" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="v_GetActionLogsInformation">
+    <Key>
+      <PropertyRef Name="ActionLogId" />
+    </Key>
+    <Property Type="Int64" Name="ActionLogId" Nullable="false" />
+    <Property Type="Int64" Name="UserId" />
+    <Property Type="Int64" Name="PagePermissionId" />
+    <Property Type="Int64" Name="ActionLogControlId" />
+    <Property Type="DateTime" Name="ActionLogDate" />
+    <Property Type="Decimal" Name="ActionLogDateMMS" Precision="6" Scale="0" />
+    <Property Type="Int64" Name="UserActionId" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PagePermissionName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PermissionControlName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UserActionName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PageName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="PageId" />
+  </EntityType>
+</Schema>
